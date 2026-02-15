@@ -39,94 +39,91 @@ export default function PrivacyPolicy() {
           </h1>
           
           <div className="prose prose-invert prose-lg max-w-none prose-headings:text-white prose-a:text-primary hover:prose-a:text-primary-light">
+            <h2 className="text-3xl font-bold mb-4 text-white">Simple Bulk Operations – GB</h2>
             <p className="text-gray-400 mb-8">
               <strong>Effective Date:</strong> February 15, 2026
             </p>
 
             <p>
-              GloBuyers ("we", "us", or "our") is committed to protecting the privacy of our merchants and their customers. 
-              This Privacy Policy describes how we collect, use, and disclose personal information when you install or use 
-              the <strong>GloBuyers</strong> app (the "App") in connection with your Shopify-supported store.
+              Simple Bulk Operations – GB ("we", "us", or "our") is committed to protecting the privacy and data of Shopify merchants who install and use our application (the "App"). This Privacy Policy explains how we access, use, and safeguard information in connection with your Shopify store.
             </p>
 
-            <h3 className="text-2xl font-semibold mt-12 mb-6">1. Information We Collect</h3>
+            <h3 className="text-2xl font-semibold mt-12 mb-6">1. Information We Access</h3>
             <p>
-              When you install the App, we are automatically able to access certain types of information from your Shopify account:
+              When you install the App, you grant us access to certain Shopify store data through Shopify’s permission system. This may include:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li>
-                <strong>Merchant Information:</strong> We collect your name, email address, shop URL, and phone number 
-                to provide you with our services and for billing purposes.
-              </li>
-              <li>
-                <strong>Store Data:</strong> We may access data about your store's products, orders, and customers 
-                as necessary to provide the App's functionality.
-              </li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold mt-12 mb-6">2. How We Use Your Information</h3>
-            <p>
-              We use the personal information we collect from you and your customers in order to provide the Service 
-              and to operate the App. Specific uses include:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li><strong>Providing Services:</strong> To operate the core features of the GloBuyers app.</li>
-              <li><strong>Communication:</strong> To communicate with you about your account, app updates, or support requests.</li>
-              <li><strong>Billing:</strong> To process payments for subscription or usage fees (if applicable).</li>
-              <li><strong>Improvement:</strong> To analyze app usage and improve our features and user experience.</li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold mt-12 mb-6">3. Sharing Your Information</h3>
-            <p>
-              We do not sell your personal information. We may share your Personal Information to comply with applicable 
-              laws and regulations, to respond to a subpoena, search warrant or other lawful request for information 
-              we receive, or to otherwise protect our rights.
-            </p>
-            <p className="mt-4">
-              We may also share your information with the following third parties to help us provide our services:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li><strong>Shopify:</strong> We share information with Shopify to power our App’s functionality within your store.</li>
-              <li><strong>Analytics Providers:</strong> We may use analytics services (such as Google Analytics) to help us understand how our customers use the App.</li>
-            </ul>
-
-            <h3 className="text-2xl font-semibold mt-12 mb-6">4. Data Retention</h3>
-            <p>
-              We will maintain your Personal Information for our records unless and until you ask us to delete this information. 
-              If you uninstall the App, we may retain certain information for billing or regulatory purposes for a limited time.
-            </p>
-
-            <h3 className="text-2xl font-semibold mt-12 mb-6">5. Your Rights (GDPR & CCPA)</h3>
-            <p>
-              If you are a resident of the European Economic Area (EEA) or California, you have certain rights regarding your personal information:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-gray-300">
-              <li><strong>Access:</strong> You have the right to request access to the personal information we hold about you.</li>
-              <li><strong>Correction:</strong> You have the right to request that we correct any inaccuracies in your personal information.</li>
-              <li><strong>Deletion:</strong> You have the right to request that we delete your personal information.</li>
+              <li>Store information (such as shop name, shop URL, and contact email)</li>
+              <li>Product data (including product titles, variants, and SKUs)</li>
+              <li>Inventory data (including inventory quantities and location information)</li>
             </ul>
             <p className="mt-4">
-              If you would like to exercise these rights, please contact us at the contact information below. 
-              Additionally, if you are a merchant, note that we generally process your customers' information 
-              as a data processor on your behalf; you are the data controller.
+              The App does not intentionally collect or process customer personal data. Our access is limited strictly to the data necessary to perform bulk product deletion and inventory update operations.
             </p>
 
-            <h3 className="text-2xl font-semibold mt-12 mb-6">6. Changes to This Policy</h3>
+            <h3 className="text-2xl font-semibold mt-12 mb-6">2. How We Use Information</h3>
             <p>
-              We may update this privacy policy from time to time in order to reflect, for example, changes to 
-              our practices or for other operational, legal or regulatory reasons.
+              We use the accessed data solely to provide the App’s core functionality, including:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-300">
+              <li>Bulk deleting products by SKU or product title</li>
+              <li>Updating inventory quantities by SKU</li>
+              <li>Updating inventory at a selected location</li>
+              <li>Displaying operation results, including success and error reports</li>
+            </ul>
+            <p className="mt-4">
+              We do not use store data for advertising, marketing, or profiling purposes.
             </p>
 
-            <h3 className="text-2xl font-semibold mt-12 mb-6">7. Contact Us</h3>
+            <h3 className="text-2xl font-semibold mt-12 mb-6">3. CSV File Handling</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-300">
+              <li>CSV files uploaded by merchants are used only to perform the requested bulk operation.</li>
+              <li>Uploaded CSV files are processed temporarily and are deleted after the operation is completed. We do not retain uploaded CSV files and we do not sell or share their contents.</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-6">4. Log Data and Retention</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-300">
+              <li>To ensure reliability, security, and troubleshooting support, we store limited operational logs related to bulk job execution (such as job status and error messages).</li>
+              <li>Logs are retained for up to 30 days.</li>
+              <li>If a merchant uninstalls the App, related logs are deleted.</li>
+              <li>We do not retain store data beyond what is necessary to operate the App.</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-6">5. Data Sharing</h3>
+            <ul className="list-disc pl-6 space-y-2 text-gray-300">
+              <li>We do not sell merchant data.</li>
+              <li>We may share limited data with trusted infrastructure and hosting providers strictly for the purpose of operating and maintaining the App. We may also disclose information if required by law or in response to valid legal requests.</li>
+            </ul>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-6">6. Merchant Rights</h3>
             <p>
-              For more information about our privacy practices, if you have questions, or if you would like to make a complaint, please contact us by email at:
+              Depending on your jurisdiction, you may have rights under applicable privacy laws, including the right to:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-gray-300">
+              <li>Request access to your data</li>
+              <li>Request correction of inaccurate data</li>
+              <li>Request deletion of stored data</li>
+            </ul>
+            <p className="mt-4">
+              If you are a Shopify merchant, you are the data controller of your customers’ data. The App acts as a data processor solely to perform the bulk operations you initiate.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-6">7. Security</h3>
+            <p>
+              We implement reasonable technical and organizational measures to protect store data against unauthorized access, alteration, disclosure, or destruction.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-6">8. Changes to This Policy</h3>
+            <p>
+              We may update this Privacy Policy from time to time for operational, legal, or regulatory reasons. Any updates will be reflected by revising the Effective Date above.
+            </p>
+
+            <h3 className="text-2xl font-semibold mt-12 mb-6">9. Contact Information</h3>
+            <p>
+              If you have any questions about this Privacy Policy or your data, please contact us at:
             </p>
             <p className="mt-4 text-xl font-bold text-primary">
               <a href="mailto:support@globuyers.com">support@globuyers.com</a>
-            </p>
-            <p className="mt-4 text-gray-400">
-              GloBuyers<br />
-              [Physical Address Available Upon Request]
             </p>
           </div>
         </motion.div>
