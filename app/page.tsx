@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import GradientOrb from "@/components/GradientOrb";
 import FloatingParticles from "@/components/FloatingParticles";
@@ -65,7 +66,7 @@ export default function Home() {
             className="text-5xl md:text-8xl font-bold tracking-tight text-white mb-2"
           />
           <h1 className="text-5xl md:text-8xl font-bold tracking-tight mb-8">
-            <span className="bg-gradient-to-r from-primary via-accent-cyan to-white bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-primary via-accent-cyan to-white bg-clip-text text-transparent text-neon-gradient">
               Digital Commerce
             </span>
           </h1>
@@ -104,7 +105,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="mb-20 max-w-2xl"
           >
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-neon-white">
               Command Center
             </h2>
             <div className="h-1 w-20 bg-primary mb-6" />
@@ -121,6 +122,12 @@ export default function Home() {
               title="Custom Software Development"
               description="Full-cycle development from concept to launch. We build scalable SaaS platforms, internal tools, and customer-facing applications using modern stack technologies."
               index={0}
+              bullets={[
+                "SaaS platforms and internal tooling on Next.js / Node.js",
+                "Real-time dashboards and admin panels",
+                "Third-party integrations and webhook pipelines",
+                "Cloud deployment on Vercel, AWS, or GCP",
+              ]}
             />
             
             {/* Secondary Services */}
@@ -130,6 +137,11 @@ export default function Home() {
               title="Shopify Apps"
               description="Custom apps to extend your store's functionality and boost conversion."
               index={1}
+              bullets={[
+                "Custom storefront extensions and theme app blocks",
+                "Checkout UI extensions and post-purchase flows",
+                "Subscription and loyalty program integrations",
+              ]}
             />
 
             <ServiceCard
@@ -138,6 +150,11 @@ export default function Home() {
               title="Automation"
               description="Workflow automation to save hours of manual work every week."
               index={2}
+              bullets={[
+                "n8n and Make.com workflow orchestration",
+                "Order management and inventory sync pipelines",
+                "Slack, email, and CRM notification automation",
+              ]}
             />
 
             {/* Tertiary Services spanning bottom row */}
@@ -147,6 +164,11 @@ export default function Home() {
               title="Enterprise Integration & API Development"
               description="Seamlessly connect your business data across platforms with custom API integrations and data synchronization pipelines."
               index={3}
+              bullets={[
+                "REST and GraphQL API design and documentation",
+                "ERP, CRM, and payment gateway connectors",
+                "Real-time data sync across Shopify, HubSpot, and custom DBs",
+              ]}
             />
           </div>
         </div>
@@ -189,7 +211,7 @@ export default function Home() {
             viewport={{ once: true }}
             className="max-w-4xl mx-auto"
           >
-            <h2 className="text-5xl md:text-7xl font-bold mb-8">
+            <h2 className="text-5xl md:text-7xl font-bold mb-8 text-neon-white">
               Ready to Upgrade?
             </h2>
             <p className="text-xl text-gray-400 mb-12 max-w-2xl mx-auto">
@@ -219,7 +241,7 @@ export default function Home() {
              <span className="font-bold text-gray-400">GloBuyers</span>
           </div>
           <div className="flex gap-8 text-sm text-gray-600">
-            <a href="#" className="hover:text-white transition-colors">Privacy</a>
+            <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
             <a href="#" className="hover:text-white transition-colors">Twitter</a>
           </div>
