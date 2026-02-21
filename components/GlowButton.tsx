@@ -17,8 +17,8 @@ export default function GlowButton({
   variant = "primary",
 }: GlowButtonProps) {
   const variantClasses = {
-    primary: "bg-white text-black hover:bg-gray-200 border border-transparent hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]",
-    secondary: "bg-transparent text-white border border-white/20 hover:border-white/50 hover:bg-white/5",
+    primary: "bg-white text-black hover:bg-gray-200 border border-transparent transition-shadow duration-300 hover:neon-glow-white",
+    secondary: "bg-transparent text-white border border-white/20 hover:border-primary/50 hover:bg-white/5 transition-shadow duration-300 hover:neon-glow-cyan",
   };
 
   return (
