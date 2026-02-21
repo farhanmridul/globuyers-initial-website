@@ -27,9 +27,9 @@
 
 ### Why GloBuyers Section
 
-- [ ] **DIFF-01**: New "Why GloBuyers" section with 3-4 differentiator cards using visitor-POV framing
-- [ ] **DIFF-02**: Each differentiator card has a neon icon, bold short headline (2-4 words), and 1-sentence expansion
-- [ ] **DIFF-03**: Differentiator cards animate in with staggered scroll trigger
+- [x] **DIFF-01**: New "Why GloBuyers" section with 3-4 differentiator cards using visitor-POV framing
+- [x] **DIFF-02**: Each differentiator card has a neon icon, bold short headline (2-4 words), and 1-sentence expansion
+- [x] **DIFF-03**: Differentiator cards animate in with staggered scroll trigger
 
 ### Services Enhancement
 
@@ -75,9 +75,9 @@
 | TECH-01 | Phase 2 — New Content Sections | Complete |
 | TECH-02 | Phase 2 — New Content Sections | Complete |
 | TECH-03 | Phase 2 — New Content Sections | Complete |
-| DIFF-01 | Phase 2 — New Content Sections | Pending |
-| DIFF-02 | Phase 2 — New Content Sections | Pending |
-| DIFF-03 | Phase 2 — New Content Sections | Pending |
+| DIFF-01 | Phase 2 — New Content Sections | Complete |
+| DIFF-02 | Phase 2 — New Content Sections | Complete |
+| DIFF-03 | Phase 2 — New Content Sections | Complete |
 
 **Coverage:**
 - v1 requirements: 16 total
