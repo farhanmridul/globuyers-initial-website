@@ -10,24 +10,24 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 1 of 2 (Aesthetic Foundation)
-Plan: 1 of 5 in current phase
+Plan: 4 of 5 in current phase
 Status: In Progress
-Last activity: 2026-02-21 — Completed 01-01-PLAN.md (neon CSS utilities and MotionConfig)
+Last activity: 2026-02-21 — Completed 01-04-PLAN.md (ServiceCard SpotlightCard effect + bullets + heading glow + footer Privacy link fix)
 
-Progress: [██░░░░░░░░] 10%
+Progress: [██████░░░░] 60%
 
 ## Performance Metrics
 
 **Velocity:**
-- Total plans completed: 1
+- Total plans completed: 3
 - Average duration: 2min
-- Total execution time: 2min
+- Total execution time: 6min
 
 **By Phase:**
 
 | Phase | Plans | Total | Avg/Plan |
 |-------|-------|-------|----------|
-| 01-aesthetic-foundation | 1 | 2min | 2min |
+| 01-aesthetic-foundation | 3 | 6min | 2min |
 
 **Recent Trend:**
 - Last 5 plans: 2min
@@ -36,6 +36,9 @@ Progress: [██░░░░░░░░] 10%
 *Updated after each plan completion*
 
 | Phase 01-aesthetic-foundation P01 | 2min | 2 tasks | 3 files |
+| Phase 01-aesthetic-foundation P02 | 2min | 2 tasks | 2 files |
+| Phase 01-aesthetic-foundation P03 | 2min | 2 tasks | 3 files |
+| Phase 01-aesthetic-foundation P04 | 2min | 2 tasks | 2 files |
 
 ## Accumulated Context
 
@@ -53,10 +56,15 @@ Recent decisions affecting current work:
 - [Phase 01]: useInView gate pattern established: attach ref to container, gate animate prop (keyframes when true, false when off-screen)
 - [Phase 01-aesthetic-foundation]: Used filter drop-shadow (not text-shadow) for gradient text glow — text-shadow invisible on bg-clip-text transparent elements
 - [Phase 01-aesthetic-foundation]: Providers.tsx thin client boundary keeps app/layout.tsx as Server Component while enabling MotionConfig hooks globally
+- [Phase 01-03]: Tailwind v4 @utility syntax required for hover: variant support on custom classes — plain .class{} definitions do not get Tailwind variant prefixes
+- [Phase 01-03]: text-neon-white applied at component level in AnimatedText, not passed via className — glow is a component-level visual property
+- [Phase 01-04]: whileHover lift animation removed from ServiceCard — spotlight cursor effect provides premium hover feedback without jitter from combined animations
+- [Phase 01-04]: useMotionValue + useMotionTemplate for spotlight updates at 60fps without React re-renders
+- [Phase 01-04]: bullets prop is optional on ServiceCard — backward compatible with existing usages
 
 ### Pending Todos
 
-None yet.
+- Capability bullets in ServiceCards flagged for content owner copy review (technical specifics are directionally correct)
 
 ### Blockers/Concerns
 
@@ -66,5 +74,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Completed 01-01-PLAN.md — neon CSS utility classes and global MotionConfig Providers
+Stopped at: Completed 01-03-PLAN.md — GlowButton three-layer neon hover glow and AnimatedText neon text-shadow (backfilled)
 Resume file: None

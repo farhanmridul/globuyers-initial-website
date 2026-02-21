@@ -9,7 +9,7 @@
 
 - [x] **AES-01**: Site uses three-layer neon box-shadow on buttons, cards, and accent elements for dramatic glow effect
 - [x] **AES-02**: Headings and gradient text use neon text-shadow to intensify the futuristic look
-- [ ] **AES-03**: ServiceCards use SpotlightCard interactive hover — card feels physically illuminated as cursor moves over it
+- [x] **AES-03**: ServiceCards use SpotlightCard interactive hover — card feels physically illuminated as cursor moves over it
 - [x] **AES-04**: `MotionConfig reducedMotion="user"` is added to `app/layout.tsx` so animations respect OS accessibility settings
 - [x] **AES-05**: FloatingParticles and GradientOrb animations pause when scrolled off-screen (useInView)
 
@@ -33,11 +33,11 @@
 
 ### Services Enhancement
 
-- [ ] **SERV-01**: Each service card in the existing bento grid shows brief capability bullets describing what we actually do (what we automate, what APIs we connect, what Shopify apps we build, what custom apps we deliver)
+- [x] **SERV-01**: Each service card in the existing bento grid shows brief capability bullets describing what we actually do (what we automate, what APIs we connect, what Shopify apps we build, what custom apps we deliver)
 
 ### Footer
 
-- [ ] **FOOT-01**: Footer Privacy link connects to the existing `/privacy` page (not `#`)
+- [x] **FOOT-01**: Footer Privacy link connects to the existing `/privacy-policy` page (not `#`)
 
 ## v2 Requirements
 
@@ -64,11 +64,11 @@
 |-------------|-------|--------|
 | AES-01 | Phase 1 — Aesthetic Foundation | Complete |
 | AES-02 | Phase 1 — Aesthetic Foundation | Complete |
-| AES-03 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-03 | Phase 1 — Aesthetic Foundation | Complete |
 | AES-04 | Phase 1 — Aesthetic Foundation | Complete |
 | AES-05 | Phase 1 — Aesthetic Foundation | Complete |
-| SERV-01 | Phase 1 — Aesthetic Foundation | Pending |
-| FOOT-01 | Phase 1 — Aesthetic Foundation | Pending |
+| SERV-01 | Phase 1 — Aesthetic Foundation | Complete |
+| FOOT-01 | Phase 1 — Aesthetic Foundation | Complete |
 | PROC-01 | Phase 2 — New Content Sections | Pending |
 | PROC-02 | Phase 2 — New Content Sections | Pending |
 | PROC-03 | Phase 2 — New Content Sections | Pending |

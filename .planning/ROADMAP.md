@@ -30,10 +30,10 @@ Decimal phases appear between their surrounding integers in numeric order.
 **Plans**: 5 plans
 
 Plans:
-- [ ] 01-01-PLAN.md — Neon CSS utilities in globals.css + MotionConfig accessibility wrapper
-- [ ] 01-02-PLAN.md — FloatingParticles and GradientOrb off-screen animation pause (useInView)
-- [ ] 01-03-PLAN.md — GlowButton three-layer neon glow + AnimatedText text-shadow upgrade
-- [ ] 01-04-PLAN.md — ServiceCard SpotlightCard effect + capability bullets + page.tsx heading glows + Privacy link fix
+- [x] 01-01-PLAN.md — Neon CSS utilities in globals.css + MotionConfig accessibility wrapper
+- [x] 01-02-PLAN.md — FloatingParticles and GradientOrb off-screen animation pause (useInView)
+- [x] 01-03-PLAN.md — GlowButton three-layer neon glow + AnimatedText text-shadow upgrade
+- [x] 01-04-PLAN.md — ServiceCard SpotlightCard effect + capability bullets + page.tsx heading glows + Privacy link fix
 - [ ] 01-05-PLAN.md — Human visual verification of all Phase 1 changes
 
 ### Phase 2: New Content Sections
@@ -54,5 +54,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Aesthetic Foundation | 2/5 | In Progress|  |
+| 1. Aesthetic Foundation | 4/5 | In Progress|  |
 | 2. New Content Sections | 0/? | Not started | - |
