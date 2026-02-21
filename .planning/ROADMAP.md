@@ -42,7 +42,7 @@ Plans:
 **Requirements**: PROC-01, PROC-02, PROC-03, TECH-01, TECH-02, TECH-03, DIFF-01, DIFF-02, DIFF-03
 **Success Criteria** (what must be TRUE):
   1. Scrolling the page reveals a "How We Work" section with 4 numbered process steps (Discovery, Build, Launch, Support), each with a deliverable description — steps animate in sequentially as they scroll into view
-  2. A "Tech Stack" section displays technologies grouped into categories (Frontend, Ecommerce, Automation, Integrations) using icon + name badges that glow on hover
+  2. A "Tech Stack" section displays technologies as a flat badge grid (ungrouped) using icon + name badges that glow on hover
   3. A "Why GloBuyers" section shows 3-4 differentiator cards with bold short headlines and one-sentence visitor-framed expansions, with neon icon accents
   4. All three new sections animate in with staggered scroll-triggered reveals consistent with the existing whileInView pattern
 **Plans**: 4 plans

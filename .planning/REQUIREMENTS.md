@@ -21,7 +21,7 @@
 
 ### Tech Stack Section
 
-- [x] **TECH-01**: New "Tech Stack" section displays technologies grouped by category (Frontend / Ecommerce / Automation / Integrations)
+- [x] **TECH-01**: New "Tech Stack" section displays technologies as a flat badge grid (ungrouped, no category labels)
 - [x] **TECH-02**: Each technology shown with recognizable icon + name (inline SVG or styled badge — no external image files)
 - [x] **TECH-03**: Tech stack grid animates in with staggered scroll-triggered reveal
 

@@ -69,7 +69,7 @@ export default function Home() {
             className="text-5xl md:text-8xl font-bold tracking-tight text-white mb-2"
           />
           <h1 className="text-5xl md:text-8xl font-bold tracking-tight mb-8">
-            <span className="bg-gradient-to-r from-primary via-accent-cyan to-white bg-clip-text text-transparent text-neon-gradient">
+            <span className="bg-gradient-to-r from-white via-accent-cyan to-primary bg-clip-text text-transparent text-neon-gradient">
               Digital Commerce
             </span>
           </h1>
