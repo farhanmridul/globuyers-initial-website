@@ -9,6 +9,9 @@ import FloatingParticles from "@/components/FloatingParticles";
 import ServiceCard from "@/components/ServiceCard";
 import AnimatedText from "@/components/AnimatedText";
 import GlowButton from "@/components/GlowButton";
+import HowWeWorkSection from "@/components/HowWeWorkSection";
+import TechStackSection from "@/components/TechStackSection";
+import WhyGloBuyersSection from "@/components/WhyGloBuyersSection";
 
 export default function Home() {
   const containerRef = useRef(null);
@@ -197,6 +200,15 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* How We Work Section */}
+      <HowWeWorkSection />
+
+      {/* Tech Stack Section */}
+      <TechStackSection />
+
+      {/* Why GloBuyers Section */}
+      <WhyGloBuyersSection />
 
       {/* Contact Section */}
       <section id="contact" className="relative py-40 flex items-center justify-center overflow-hidden">
