@@ -7,11 +7,11 @@
 
 ### Aesthetic Upgrades
 
-- [ ] **AES-01**: Site uses three-layer neon box-shadow on buttons, cards, and accent elements for dramatic glow effect
-- [ ] **AES-02**: Headings and gradient text use neon text-shadow to intensify the futuristic look
+- [x] **AES-01**: Site uses three-layer neon box-shadow on buttons, cards, and accent elements for dramatic glow effect
+- [x] **AES-02**: Headings and gradient text use neon text-shadow to intensify the futuristic look
 - [ ] **AES-03**: ServiceCards use SpotlightCard interactive hover — card feels physically illuminated as cursor moves over it
-- [ ] **AES-04**: `MotionConfig reducedMotion="user"` is added to `app/layout.tsx` so animations respect OS accessibility settings
-- [ ] **AES-05**: FloatingParticles and GradientOrb animations pause when scrolled off-screen (useInView)
+- [x] **AES-04**: `MotionConfig reducedMotion="user"` is added to `app/layout.tsx` so animations respect OS accessibility settings
+- [x] **AES-05**: FloatingParticles and GradientOrb animations pause when scrolled off-screen (useInView)
 
 ### How We Work Section
 
@@ -62,11 +62,11 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AES-01 | Phase 1 — Aesthetic Foundation | Pending |
-| AES-02 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-01 | Phase 1 — Aesthetic Foundation | Complete |
+| AES-02 | Phase 1 — Aesthetic Foundation | Complete |
 | AES-03 | Phase 1 — Aesthetic Foundation | Pending |
-| AES-04 | Phase 1 — Aesthetic Foundation | Pending |
-| AES-05 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-04 | Phase 1 — Aesthetic Foundation | Complete |
+| AES-05 | Phase 1 — Aesthetic Foundation | Complete |
 | SERV-01 | Phase 1 — Aesthetic Foundation | Pending |
 | FOOT-01 | Phase 1 — Aesthetic Foundation | Pending |
 | PROC-01 | Phase 2 — New Content Sections | Pending |

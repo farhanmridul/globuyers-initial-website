@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 1 of 2 (Aesthetic Foundation)
-Plan: 0 of ? in current phase
-Status: Ready to plan
-Last activity: 2026-02-21 — Roadmap created, phases derived from requirements
+Plan: 2 of 5 in current phase
+Status: In Progress
+Last activity: 2026-02-21 — Completed 01-02-PLAN.md (useInView animation gates)
 
-Progress: [██░░░░░░░░] 0%
+Progress: [████░░░░░░] 20%
 
 ## Performance Metrics
 
@@ -34,6 +34,8 @@ Progress: [██░░░░░░░░] 0%
 - Trend: —
 
 *Updated after each plan completion*
+| Phase 01 P02 | 2 | 2 tasks | 2 files |
+| Phase 01-aesthetic-foundation P01 | 2min | 2 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -47,6 +49,10 @@ Recent decisions affecting current work:
 - [Research]: Accessibility before content — MotionConfig + useInView pause must be Phase 1, not retrofitted
 - [Research]: SpotlightCard pattern uses useMotionValue + useMotionTemplate (not animated boxShadow — performance pitfall)
 - [Research]: Math.random() in render body causes Next.js 16 hydration hard errors — must live in useEffect
+- [Phase 01]: animate={false} stops framer-motion loops and resets to initial values — correct halt pattern for repeating keyframe sequences
+- [Phase 01]: useInView gate pattern established: attach ref to container, gate animate prop (keyframes when true, false when off-screen)
+- [Phase 01-aesthetic-foundation]: Used filter drop-shadow (not text-shadow) for gradient text glow — text-shadow invisible on bg-clip-text transparent elements
+- [Phase 01-aesthetic-foundation]: Providers.tsx thin client boundary keeps app/layout.tsx as Server Component while enabling MotionConfig hooks globally
 
 ### Pending Todos
 
@@ -60,5 +66,5 @@ None yet.
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Roadmap created — ready to plan Phase 1
+Stopped at: Completed 01-02-PLAN.md — useInView gates on FloatingParticles and GradientOrb
 Resume file: None
