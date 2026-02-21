@@ -10,11 +10,11 @@ See: .planning/PROJECT.md (updated 2026-02-21)
 ## Current Position
 
 Phase: 2 of 2 (New Content Sections)
-Plan: 1 of 4 in current phase
+Plan: 2 of 4 in current phase
 Status: In Progress
-Last activity: 2026-02-21 — Completed 02-01-PLAN.md (HowWeWorkSection component — 4-step process timeline with stagger animation)
+Last activity: 2026-02-21 — Completed 02-02-PLAN.md (TechStackSection component — react-icons installed, 8 Si badges in 3 categories, stagger animation)
 
-Progress: [██░░░░░░░░] 25% (Phase 2: 1/4 plans complete)
+Progress: [████░░░░░░] 50% (Phase 2: 2/4 plans complete)
 
 ## Performance Metrics
 
@@ -42,6 +42,7 @@ Progress: [██░░░░░░░░] 25% (Phase 2: 1/4 plans complete)
 | Phase 01-aesthetic-foundation P04 | 2min | 2 tasks | 2 files |
 | Phase 01-aesthetic-foundation P05 | 1min | 1 tasks | 0 files |
 | Phase 02-new-content-sections P01 | 1min | 1 tasks | 1 files |
+| Phase 02-new-content-sections P02 | 3min | 1 tasks | 3 files |
 
 ## Accumulated Context
 
@@ -67,6 +68,9 @@ Recent decisions affecting current work:
 - [Phase 01-aesthetic-foundation]: Phase 1 approved as-is — no visual regressions, all 7 requirements confirmed working in browser
 - [Phase 02-01]: No whileHover on staggered step cards — CSS hover:neon-glow-cyan used instead to avoid framer-motion stagger conflict (issue #908)
 - [Phase 02-01]: containerVariants/itemVariants stagger pattern established for Phase 2 sections (staggerChildren: 0.15, delayChildren: 0.1, y: 24 to 0, duration: 0.5)
+- [Phase 02-02]: SiFramer used (not SiFramermotion — does not exist in react-icons/si)
+- [Phase 02-02]: Named imports from react-icons/si required for v5 — default imports break
+- [Phase 02-02]: Per-category stagger containers so each category's badges animate independently on scroll
 
 ### Pending Todos
 
@@ -74,11 +78,11 @@ Recent decisions affecting current work:
 
 ### Blockers/Concerns
 
-- [Phase 2]: SVG logo assets for TechStackSection must be sourced before that section can be built — confirm license terms per logo
 - [Phase 2]: Process step copy (deliverable descriptions, time estimates) needs validation against actual GloBuyers service delivery
+- [RESOLVED - Phase 02-02]: SVG logo assets concern — resolved by using react-icons/si (inline SVG icons, no external asset hosting or license issues)
 
 ## Session Continuity
 
 Last session: 2026-02-21
-Stopped at: Completed 02-01-PLAN.md — HowWeWorkSection component built (4-step timeline, stagger animation, responsive layout). Phase 2 Plan 1 complete.
+Stopped at: Completed 02-02-PLAN.md — TechStackSection component built (react-icons installed, 8 Si icon badges in 3 categories, per-category stagger animation, CSS neon hover). Phase 2 Plan 2 complete.
 Resume file: None

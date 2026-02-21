@@ -21,9 +21,9 @@
 
 ### Tech Stack Section
 
-- [ ] **TECH-01**: New "Tech Stack" section displays technologies grouped by category (Frontend / Ecommerce / Automation / Integrations)
-- [ ] **TECH-02**: Each technology shown with recognizable icon + name (inline SVG or styled badge — no external image files)
-- [ ] **TECH-03**: Tech stack grid animates in with staggered scroll-triggered reveal
+- [x] **TECH-01**: New "Tech Stack" section displays technologies grouped by category (Frontend / Ecommerce / Automation / Integrations)
+- [x] **TECH-02**: Each technology shown with recognizable icon + name (inline SVG or styled badge — no external image files)
+- [x] **TECH-03**: Tech stack grid animates in with staggered scroll-triggered reveal
 
 ### Why GloBuyers Section
 
@@ -72,9 +72,9 @@
 | PROC-01 | Phase 2 — New Content Sections | Complete |
 | PROC-02 | Phase 2 — New Content Sections | Complete |
 | PROC-03 | Phase 2 — New Content Sections | Complete |
-| TECH-01 | Phase 2 — New Content Sections | Pending |
-| TECH-02 | Phase 2 — New Content Sections | Pending |
-| TECH-03 | Phase 2 — New Content Sections | Pending |
+| TECH-01 | Phase 2 — New Content Sections | Complete |
+| TECH-02 | Phase 2 — New Content Sections | Complete |
+| TECH-03 | Phase 2 — New Content Sections | Complete |
 | DIFF-01 | Phase 2 — New Content Sections | Pending |
 | DIFF-02 | Phase 2 — New Content Sections | Pending |
 | DIFF-03 | Phase 2 — New Content Sections | Pending |
