@@ -45,7 +45,7 @@ export default function AnimatedText({ text, className = "" }: AnimatedTextProps
       variants={container}
       initial="hidden"
       animate="visible"
-      className={className}
+      className={`text-neon-white ${className}`}
     >
       {words.map((word, index) => (
         <motion.span
