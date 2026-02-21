@@ -8,7 +8,6 @@ import {
   SiTypescript,
   SiTailwindcss,
   SiFramer,
-  SiStripe,
   SiGoogleanalytics,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
@@ -18,33 +17,14 @@ interface Tech {
   Icon: IconType;
 }
 
-interface Category {
-  label: string;
-  items: Tech[];
-}
-
-const categories: Category[] = [
-  {
-    label: "Frontend",
-    items: [
-      { name: "Next.js", Icon: SiNextdotjs },
-      { name: "React", Icon: SiReact },
-      { name: "TypeScript", Icon: SiTypescript },
-      { name: "Tailwind CSS", Icon: SiTailwindcss },
-      { name: "Framer Motion", Icon: SiFramer },
-    ],
-  },
-  {
-    label: "Ecommerce",
-    items: [
-      { name: "Shopify", Icon: SiShopify },
-      { name: "Stripe", Icon: SiStripe },
-    ],
-  },
-  {
-    label: "Analytics",
-    items: [{ name: "Google Analytics", Icon: SiGoogleanalytics }],
-  },
+const techs: Tech[] = [
+  { name: "Next.js", Icon: SiNextdotjs },
+  { name: "React", Icon: SiReact },
+  { name: "TypeScript", Icon: SiTypescript },
+  { name: "Tailwind CSS", Icon: SiTailwindcss },
+  { name: "Framer Motion", Icon: SiFramer },
+  { name: "Shopify", Icon: SiShopify },
+  { name: "Google Analytics", Icon: SiGoogleanalytics },
 ];
 
 const containerVariants = {
@@ -81,39 +61,30 @@ export default function TechStackSection() {
           </p>
         </motion.div>
 
-        {/* Badge categories */}
-        <div className="space-y-12">
-          {categories.map((cat) => (
-            <div key={cat.label}>
-              <p className="text-xs font-semibold uppercase tracking-widest text-gray-500 mb-4">
-                {cat.label}
-              </p>
-              <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                className="flex flex-wrap gap-3"
-              >
-                {cat.items.map(({ name, Icon }) => (
-                  <motion.div
-                    key={name}
-                    variants={itemVariants}
-                    className="flex items-center gap-2 px-4 py-2 rounded-full
-                               bg-white/5 border border-white/10
-                               hover:border-primary/40 hover:neon-glow-cyan
-                               transition-all duration-300 cursor-default"
-                  >
-                    <Icon className="text-primary text-lg flex-shrink-0" />
-                    <span className="text-sm font-medium text-gray-300">
-                      {name}
-                    </span>
-                  </motion.div>
-                ))}
-              </motion.div>
-            </div>
+        {/* Badge grid */}
+        <motion.div
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
+          className="flex flex-wrap gap-3"
+        >
+          {techs.map(({ name, Icon }) => (
+            <motion.div
+              key={name}
+              variants={itemVariants}
+              className="flex items-center gap-2 px-4 py-2 rounded-full
+                         bg-white/5 border border-white/10
+                         hover:border-primary/40 hover:neon-glow-cyan
+                         transition-all duration-300 cursor-default"
+            >
+              <Icon className="text-primary text-lg flex-shrink-0" />
+              <span className="text-sm font-medium text-gray-300">
+                {name}
+              </span>
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

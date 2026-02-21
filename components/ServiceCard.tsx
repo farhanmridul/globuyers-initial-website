@@ -50,7 +50,7 @@ export default function ServiceCard({
         {/* Subtle gradient blob */}
         <div className="absolute -right-20 -top-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors duration-500" />
 
-        <div className="relative z-10 flex flex-col h-full">
+        <div className="relative z-10 flex flex-col h-full text-left">
           <div className="mb-6 p-4 rounded-2xl bg-white/5 w-fit border border-white/10 group-hover:border-primary/30 transition-colors duration-300">
             {icon}
           </div>

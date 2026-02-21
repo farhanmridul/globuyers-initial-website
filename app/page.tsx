@@ -154,7 +154,7 @@ export default function Home() {
               description="Workflow automation to save hours of manual work every week."
               index={2}
               bullets={[
-                "n8n and Make.com workflow orchestration",
+                "Custom workflow automation for any business process",
                 "Order management and inventory sync pipelines",
                 "Slack, email, and CRM notification automation",
               ]}
