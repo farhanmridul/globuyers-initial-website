@@ -1,7 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { motion, useInView } from "framer-motion";
+import { useState, useEffect, useRef } from "react";
 
 export default function FloatingParticles() {
   const [particles, setParticles] = useState<Array<{
@@ -12,6 +12,9 @@ export default function FloatingParticles() {
     duration: number;
     delay: number;
   }>>([]);
+
+  const containerRef = useRef<HTMLDivElement>(null);
+  const isInView = useInView(containerRef);
 
   useEffect(() => {
     setParticles(
@@ -29,7 +32,7 @@ export default function FloatingParticles() {
   if (particles.length === 0) return null;
 
   return (
-    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+    <div ref={containerRef} className="absolute inset-0 overflow-hidden pointer-events-none">
       {particles.map((particle) => (
         <motion.div
           key={particle.id}
@@ -40,16 +43,16 @@ export default function FloatingParticles() {
             width: particle.size,
             height: particle.size,
           }}
-          animate={{
-            y: [0, -100, 0],
-            opacity: [0, 1, 0],
-          }}
-          transition={{
-            duration: particle.duration,
-            repeat: Infinity,
-            delay: particle.delay,
-            ease: "easeInOut",
-          }}
+          animate={
+            isInView
+              ? { y: [0, -100, 0], opacity: [0, 1, 0] }
+              : false
+          }
+          transition={
+            isInView
+              ? { duration: particle.duration, repeat: Infinity, delay: particle.delay, ease: "easeInOut" }
+              : { duration: 0 }
+          }
         />
       ))}
     </div>
