@@ -62,28 +62,28 @@
 
 | Requirement | Phase | Status |
 |-------------|-------|--------|
-| AES-01 | Phase 1 | Pending |
-| AES-02 | Phase 1 | Pending |
-| AES-03 | Phase 1 | Pending |
-| AES-04 | Phase 1 | Pending |
-| AES-05 | Phase 1 | Pending |
-| PROC-01 | Phase 2 | Pending |
-| PROC-02 | Phase 2 | Pending |
-| PROC-03 | Phase 2 | Pending |
-| TECH-01 | Phase 2 | Pending |
-| TECH-02 | Phase 2 | Pending |
-| TECH-03 | Phase 2 | Pending |
-| DIFF-01 | Phase 2 | Pending |
-| DIFF-02 | Phase 2 | Pending |
-| DIFF-03 | Phase 2 | Pending |
-| SERV-01 | Phase 1 | Pending |
-| FOOT-01 | Phase 1 | Pending |
+| AES-01 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-02 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-03 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-04 | Phase 1 — Aesthetic Foundation | Pending |
+| AES-05 | Phase 1 — Aesthetic Foundation | Pending |
+| SERV-01 | Phase 1 — Aesthetic Foundation | Pending |
+| FOOT-01 | Phase 1 — Aesthetic Foundation | Pending |
+| PROC-01 | Phase 2 — New Content Sections | Pending |
+| PROC-02 | Phase 2 — New Content Sections | Pending |
+| PROC-03 | Phase 2 — New Content Sections | Pending |
+| TECH-01 | Phase 2 — New Content Sections | Pending |
+| TECH-02 | Phase 2 — New Content Sections | Pending |
+| TECH-03 | Phase 2 — New Content Sections | Pending |
+| DIFF-01 | Phase 2 — New Content Sections | Pending |
+| DIFF-02 | Phase 2 — New Content Sections | Pending |
+| DIFF-03 | Phase 2 — New Content Sections | Pending |
 
 **Coverage:**
 - v1 requirements: 16 total
 - Mapped to phases: 16
-- Unmapped: 0 ✓
+- Unmapped: 0
 
 ---
 *Requirements defined: 2026-02-21*
-*Last updated: 2026-02-21 after initial definition*
+*Last updated: 2026-02-21 after roadmap creation*
