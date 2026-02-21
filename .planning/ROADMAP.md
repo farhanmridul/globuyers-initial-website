@@ -45,7 +45,13 @@ Plans:
   2. A "Tech Stack" section displays technologies grouped into categories (Frontend, Ecommerce, Automation, Integrations) using icon + name badges that glow on hover
   3. A "Why GloBuyers" section shows 3-4 differentiator cards with bold short headlines and one-sentence visitor-framed expansions, with neon icon accents
   4. All three new sections animate in with staggered scroll-triggered reveals consistent with the existing whileInView pattern
-**Plans**: TBD
+**Plans**: 4 plans
+
+Plans:
+- [ ] 02-01-PLAN.md — HowWeWorkSection: 4-step horizontal timeline with stagger scroll animation
+- [ ] 02-02-PLAN.md — Install react-icons + TechStackSection: grouped badge grid with brand icons and neon hover
+- [ ] 02-03-PLAN.md — WhyGloBuyersSection: 3 differentiator cards + wire all sections into page.tsx
+- [ ] 02-04-PLAN.md — Human visual verification of all Phase 2 sections
 
 ## Progress
 
