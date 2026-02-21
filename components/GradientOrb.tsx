@@ -1,6 +1,7 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 
 interface GradientOrbProps {
   color?: "cyan" | "purple" | "pink";
@@ -13,6 +14,9 @@ export default function GradientOrb({
   size = "md",
   className = "",
 }: GradientOrbProps) {
+  const ref = useRef<HTMLDivElement>(null);
+  const isInView = useInView(ref);
+
   const sizeClasses = {
     sm: "w-32 h-32",
     md: "w-64 h-64",
@@ -27,11 +31,13 @@ export default function GradientOrb({
 
   return (
     <motion.div
+      ref={ref}
       className={`absolute rounded-full blur-3xl opacity-20 ${sizeClasses[size]} ${colorClasses[color]} ${className}`}
-      animate={{
-        scale: [1, 1.2, 1],
-        opacity: [0.2, 0.3, 0.2],
-      }}
+      animate={
+        isInView
+          ? { scale: [1, 1.2, 1], opacity: [0.2, 0.3, 0.2] }
+          : false
+      }
       transition={{
         duration: 8,
         repeat: Infinity,
