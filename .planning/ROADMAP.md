@@ -27,7 +27,14 @@ Decimal phases appear between their surrounding integers in numeric order.
   3. Hovering a service card produces a smooth spotlight effect — the card feels physically illuminated by the cursor
   4. Running the site in an OS with reduced-motion enabled causes animations to stop; no motion plays that the OS has asked to suppress
   5. Service cards show brief capability bullets, and the footer Privacy link navigates to /privacy (not a hash anchor)
-**Plans**: TBD
+**Plans**: 5 plans
+
+Plans:
+- [ ] 01-01-PLAN.md — Neon CSS utilities in globals.css + MotionConfig accessibility wrapper
+- [ ] 01-02-PLAN.md — FloatingParticles and GradientOrb off-screen animation pause (useInView)
+- [ ] 01-03-PLAN.md — GlowButton three-layer neon glow + AnimatedText text-shadow upgrade
+- [ ] 01-04-PLAN.md — ServiceCard SpotlightCard effect + capability bullets + page.tsx heading glows + Privacy link fix
+- [ ] 01-05-PLAN.md — Human visual verification of all Phase 1 changes
 
 ### Phase 2: New Content Sections
 **Goal**: Three new marketing sections exist on the page — visitors can see how GloBuyers works, what technologies it uses, and why they should choose it over alternatives
@@ -47,5 +54,5 @@ Phases execute in numeric order: 1 → 2
 
 | Phase | Plans Complete | Status | Completed |
 |-------|----------------|--------|-----------|
-| 1. Aesthetic Foundation | 0/? | Not started | - |
+| 1. Aesthetic Foundation | 0/5 | Not started | - |
 | 2. New Content Sections | 0/? | Not started | - |
