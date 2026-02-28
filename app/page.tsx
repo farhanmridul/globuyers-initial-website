@@ -4,13 +4,13 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
+import { FiCode, FiShoppingCart, FiCpu, FiShare2 } from "react-icons/fi";
 import GradientOrb from "@/components/GradientOrb";
 import FloatingParticles from "@/components/FloatingParticles";
 import ServiceCard from "@/components/ServiceCard";
 import AnimatedText from "@/components/AnimatedText";
 import GlowButton from "@/components/GlowButton";
 import HowWeWorkSection from "@/components/HowWeWorkSection";
-import TechStackSection from "@/components/TechStackSection";
 import WhyGloBuyersSection from "@/components/WhyGloBuyersSection";
 
 export default function Home() {
@@ -117,11 +117,11 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[300px]">
             {/* Main Service - Spans 2 columns */}
             <ServiceCard
               className="md:col-span-2 md:row-span-2"
-              icon={<span className="text-4xl">🚀</span>}
+              icon={<FiCode className="text-3xl text-primary" />}
               title="Custom Software Development"
               description="Full-cycle development from concept to launch. We build scalable SaaS platforms, internal tools, and customer-facing applications using modern stack technologies."
               index={0}
@@ -136,7 +136,7 @@ export default function Home() {
             {/* Secondary Services */}
             <ServiceCard
               className="md:col-span-1 md:row-span-1"
-              icon={<span className="text-4xl">🛍️</span>}
+              icon={<FiShoppingCart className="text-3xl text-primary" />}
               title="Shopify Apps"
               description="Custom apps to extend your store's functionality and boost conversion."
               index={1}
@@ -149,7 +149,7 @@ export default function Home() {
 
             <ServiceCard
               className="md:col-span-1 md:row-span-1"
-              icon={<span className="text-4xl">⚡</span>}
+              icon={<FiCpu className="text-3xl text-primary" />}
               title="Automation"
               description="Workflow automation to save hours of manual work every week."
               index={2}
@@ -163,7 +163,7 @@ export default function Home() {
             {/* Tertiary Services spanning bottom row */}
              <ServiceCard
               className="md:col-span-3 md:row-span-1 flex-row"
-              icon={<span className="text-4xl">🔌</span>}
+              icon={<FiShare2 className="text-3xl text-primary" />}
               title="Enterprise Integration & API Development"
               description="Seamlessly connect your business data across platforms with custom API integrations and data synchronization pipelines."
               index={3}
@@ -180,7 +180,7 @@ export default function Home() {
       {/* Stats/Trust Section */}
       <section className="py-20 border-y border-white/5 bg-white/[0.02]">
         <div className="container mx-auto px-6">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 text-center">
              <div>
                <h3 className="text-4xl font-bold text-white mb-2">99.9%</h3>
                <p className="text-sm text-gray-500 uppercase tracking-wider">Uptime</p>
@@ -204,14 +204,11 @@ export default function Home() {
       {/* How We Work Section */}
       <HowWeWorkSection />
 
-      {/* Tech Stack Section */}
-      <TechStackSection />
-
       {/* Why GloBuyers Section */}
       <WhyGloBuyersSection />
 
       {/* Contact Section */}
-      <section id="contact" className="relative py-40 flex items-center justify-center overflow-hidden">
+      <section id="contact" className="relative py-24 md:py-40 flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-primary/10 pointer-events-none" />
         <GradientOrb color="pink" size="lg" className="top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 opacity-20" />
         

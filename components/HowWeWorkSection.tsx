@@ -69,7 +69,7 @@ export default function HowWeWorkSection() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="flex flex-col md:flex-row items-start gap-0"
+          className="flex flex-col md:flex-row items-start gap-4 md:gap-0"
         >
           {steps.map((step, i) => (
             <React.Fragment key={step.number}>
