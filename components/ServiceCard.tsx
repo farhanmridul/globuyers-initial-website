@@ -37,7 +37,7 @@ export default function ServiceCard({
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
       viewport={{ once: true }}
-      className={`relative group h-full ${className}`}
+      className={`relative group md:h-full ${className}`}
       onMouseMove={handleMouseMove}
     >
       {/* Spotlight overlay — pointer-events-none so it doesn't block card interactions */}
@@ -46,11 +46,11 @@ export default function ServiceCard({
         style={{ background: spotlightBackground }}
       />
 
-      <div className="relative h-full bg-glass border border-glass-border rounded-3xl p-8 transition-all duration-300 hover:border-primary/40 hover:neon-glow-cyan overflow-hidden">
+      <div className="relative md:h-full bg-glass border border-glass-border rounded-3xl p-8 transition-all duration-300 hover:border-primary/40 hover:neon-glow-cyan overflow-hidden">
         {/* Subtle gradient blob */}
         <div className="absolute -right-20 -top-20 w-64 h-64 bg-primary/5 rounded-full blur-3xl group-hover:bg-primary/10 transition-colors duration-500" />
 
-        <div className="relative z-10 flex flex-col h-full text-left">
+        <div className="relative z-10 flex flex-col md:h-full text-left">
           <div className="mb-6 p-4 rounded-2xl bg-white/5 w-fit border border-white/10 group-hover:border-primary/30 transition-colors duration-300">
             {icon}
           </div>

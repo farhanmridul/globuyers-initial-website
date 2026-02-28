@@ -4,7 +4,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 import { useRef } from "react";
-import { FiCode, FiShoppingCart, FiCpu, FiShare2 } from "react-icons/fi";
+import { FiCode, FiShoppingCart, FiCpu, FiShare2, FiChevronDown } from "react-icons/fi";
 import GradientOrb from "@/components/GradientOrb";
 import FloatingParticles from "@/components/FloatingParticles";
 import ServiceCard from "@/components/ServiceCard";
@@ -66,15 +66,15 @@ export default function Home() {
 
           <AnimatedText
             text="The Future of"
-            className="text-5xl md:text-8xl font-bold tracking-tight text-white mb-2"
+            className="text-3xl sm:text-5xl md:text-8xl font-bold tracking-tight text-white mb-2"
           />
-          <h1 className="text-5xl md:text-8xl font-bold tracking-tight mb-8">
-            <span className="bg-gradient-to-r from-white via-accent-cyan to-primary bg-clip-text text-transparent text-neon-gradient">
+          <h1 className="text-3xl sm:text-5xl md:text-8xl font-bold tracking-tight mb-8">
+            <span className="bg-gradient-to-r from-white via-accent-cyan to-primary bg-clip-text text-transparent text-neon-gradient gradient-animate-x">
               Digital Commerce
             </span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
+          <p className="text-base sm:text-xl md:text-2xl text-gray-400 max-w-2xl mx-auto mb-12 font-light leading-relaxed">
             We build high-performance software, custom Shopify apps, and intelligent automation systems for forward-thinking brands.
           </p>
 
@@ -90,11 +90,12 @@ export default function Home() {
 
         {/* Scroll Indicator */}
         <motion.div
-           animate={{ y: [0, 10, 0], opacity: [0.5, 1, 0.5] }}
+           animate={{ y: [0, 8, 0], opacity: [0.4, 1, 0.4] }}
            transition={{ duration: 2, repeat: Infinity }}
-           className="absolute bottom-10 left-1/2 -translate-x-1/2 text-gray-500 text-sm tracking-widest uppercase"
+           className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1"
         >
-          Scroll to Explore
+          <span className="text-gray-600 text-[10px] tracking-widest uppercase">Scroll</span>
+          <FiChevronDown className="text-primary text-lg" />
         </motion.div>
       </section>
 
@@ -117,7 +118,7 @@ export default function Home() {
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[300px]">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:auto-rows-[350px]">
             {/* Main Service - Spans 2 columns */}
             <ServiceCard
               className="md:col-span-2 md:row-span-2"
@@ -129,7 +130,6 @@ export default function Home() {
                 "SaaS platforms and internal tooling on Next.js / Node.js",
                 "Real-time dashboards and admin panels",
                 "Third-party integrations and webhook pipelines",
-                "Cloud deployment on Vercel, AWS, or GCP",
               ]}
             />
             
@@ -252,7 +252,6 @@ export default function Home() {
           <div className="flex gap-8 text-sm text-gray-600">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">Privacy</Link>
             <a href="#" className="hover:text-white transition-colors">Terms</a>
-            <a href="#" className="hover:text-white transition-colors">Twitter</a>
           </div>
           <p className="text-gray-600 text-sm">
             © {new Date().getFullYear()} GloBuyers Inc.
